@@ -1,6 +1,4 @@
-import { lazy } from "react";
-
 import Button from "./Button";
-const Loading = lazy(async () => await import("./Loading"));
+import Loading from "./Loading";
 
 export { Button, Loading };
