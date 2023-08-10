@@ -29,6 +29,7 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "release": "npm version patch && npm publish --access=public",
+    "build-components": "npx parcel build src/components/index.tsx --target commonjs",
     "eject": "react-scripts eject",
     "storybook": "storybook dev -p 6006",
     "build-storybook": "storybook build"
