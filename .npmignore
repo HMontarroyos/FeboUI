@@ -3,7 +3,11 @@ coverage/
 dist/
 node_modules/
 src/
-
+public/
+storybook-static/
+ts
+.tsconfig.json
+.vercel.json
 .cache
 .babelrc
 .editorconfig
