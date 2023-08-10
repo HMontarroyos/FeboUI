@@ -6,8 +6,8 @@ src/
 public/
 storybook-static/
 ts
-.tsconfig.json
-.vercel.json
+tsconfig.json
+vercel.json
 .cache
 .babelrc
 .editorconfig
