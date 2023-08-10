@@ -29,7 +29,7 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "release": "npm version patch && npm publish --access=public",
-    "build-components": "npx parcel build src/components/index.tsx --target commonjs",
+    "build-components": "webpack --config webpack.config.js",
     "eject": "react-scripts eject",
     "storybook": "storybook dev -p 6006",
     "build-storybook": "storybook build"
@@ -54,6 +54,10 @@
     ]
   },
   "devDependencies": {
+    "@babel/core": "^7.22.10",
+    "@babel/preset-env": "^7.22.10",
+    "@babel/preset-react": "^7.22.5",
+    "@babel/preset-typescript": "^7.22.5",
     "@storybook/addon-essentials": "^7.2.2",
     "@storybook/addon-interactions": "^7.2.2",
     "@storybook/addon-links": "^7.2.2",
@@ -64,12 +68,16 @@
     "@storybook/react": "^7.2.2",
     "@storybook/react-webpack5": "^7.2.2",
     "@storybook/testing-library": "^0.2.0",
+    "babel-loader": "^9.1.3",
     "babel-plugin-named-exports-order": "^0.0.2",
     "eslint-plugin-storybook": "^0.6.13",
+    "file-loader": "^6.2.0",
     "parcel-bundler": "^1.12.5",
     "prop-types": "^15.8.1",
     "semver": "^7.5.4",
     "storybook": "^7.2.2",
-    "webpack": "^5.88.2"
+    "ts-loader": "^9.4.4",
+    "webpack": "^5.88.2",
+    "webpack-cli": "^5.1.4"
   }
 }
