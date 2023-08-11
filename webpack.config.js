@@ -5,7 +5,7 @@ module.exports = {
   entry: "./src/components/index.tsx",
   output: {
     path: path.resolve(__dirname, "dist"),
-    filename: "febo-ui.js", 
+    filename: "index.js", 
     library: "febo-ui",
     libraryTarget: "umd",
     umdNamedDefine: true,
