@@ -29,7 +29,7 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "release": "npm version patch && npm publish --access=public",
-    "build-components": "webpack --config webpack.config.js",
+    "build-components": "npx webpack --config webpack.config.js",
     "eject": "react-scripts eject",
     "storybook": "storybook dev -p 6006",
     "build-storybook": "storybook build"
