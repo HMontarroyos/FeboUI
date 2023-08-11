@@ -73,7 +73,6 @@
     "babel-plugin-styled-components": "^2.1.4",
     "eslint-plugin-storybook": "^0.6.13",
     "file-loader": "^6.2.0",
-    "parcel-bundler": "^1.12.5",
     "prop-types": "^15.8.1",
     "semver": "^7.5.4",
     "storybook": "^7.2.2",
