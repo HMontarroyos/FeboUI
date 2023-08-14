@@ -20,6 +20,7 @@ export default {
       declarationDir: "dist/types",
     }),
     babel({
+      babelHelpers: 'bundled',
       presets: [
         ["@babel/preset-env", { modules: false }],
         "@babel/preset-react",
