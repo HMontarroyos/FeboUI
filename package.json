@@ -90,6 +90,7 @@
     "prop-types": "^15.8.1",
     "rollup": "^3.28.0",
     "rollup-plugin-image-files": "^1.4.2",
+    "rollup-plugin-node-polyfills": "^0.2.1",
     "semver": "^7.5.4",
     "storybook": "^7.2.3",
     "ts-loader": "^9.4.4"
