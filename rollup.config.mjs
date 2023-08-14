@@ -3,6 +3,7 @@ import commonjs from "@rollup/plugin-commonjs";
 import resolve from "@rollup/plugin-node-resolve";
 import image from "rollup-plugin-image-files";
 import babel from "@rollup/plugin-babel";
+import replace from "rollup-plugin-replace";
 
 export default {
   input: "./src/components/index.tsx",
@@ -28,6 +29,12 @@ export default {
       plugins: ["babel-plugin-styled-components"],
     }),
     image(),
+    replace({
+      'process.env.NODE_ENV': JSON.stringify('production'),
+      'process.env.NODE_DEBUG': false,
+      'process.platform': JSON.stringify('browser'),
+      'process': 'undefined'
+    }),
   ],
   external: ["react", "react-dom"],
 };
