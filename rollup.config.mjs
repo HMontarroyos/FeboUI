@@ -21,7 +21,7 @@ export default {
     }),
     babel({
       presets: ["@babel/preset-react", "@babel/preset-env"],
-      plugins: ["babel/plugin-styled-components"]
+      plugins: ["styled-components"]
     }),
     image(),
   ],
