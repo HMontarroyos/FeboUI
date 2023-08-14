@@ -11,7 +11,8 @@ function Loading({ show }: LoadingProps): JSX.Element {
     <>
       {show && (
         <S.Container>
-          <S.Image src={LoadingImage} alt={"loading"} />
+          {/* <S.Image src={LoadingImage} alt={"loading"} /> */}
+          <h1>Loading ...</h1>
         </S.Container>
       )}
     </>

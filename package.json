@@ -84,7 +84,6 @@
     "@storybook/react-webpack5": "^7.2.3",
     "@storybook/testing-library": "^0.2.0",
     "babel-plugin-styled-components": "^2.1.4",
-    "babel-plugin-transform-es2015-modules-commonjs": "^6.26.2",
     "eslint-plugin-storybook": "^0.6.13",
     "prop-types": "^15.8.1",
     "rollup": "^3.28.0",
