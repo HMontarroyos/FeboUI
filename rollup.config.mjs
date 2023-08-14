@@ -3,7 +3,7 @@ import commonjs from '@rollup/plugin-commonjs';
 import resolve from '@rollup/plugin-node-resolve';
 import image from 'rollup-plugin-image-files';
 import babel from '@rollup/plugin-babel';
-import nodePolyfills from 'rollup-plugin-node-polyfills';
+import replace from '@rollup/plugin-replace'; 
 
 export default {
   input: './src/components/index.tsx', 
@@ -24,7 +24,9 @@ export default {
       presets: ["@babel/preset-react", "@babel/preset-env"],
       plugins: ["babel-plugin-styled-components"]
     }),
-    nodePolyfills(),
+      replace({
+        'process.env.NODE_ENV': JSON.stringify( 'production' )
+      }),
     image(),
   ],
   external: ['react', 'react-dom'], 
