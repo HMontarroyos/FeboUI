@@ -14,7 +14,9 @@ export default {
   },
   plugins: [
     resolve(),
-    commonjs(),
+    commonjs({
+      include: /node_modules/,
+    }),
     typescript({
       declaration: true,
       declarationMap: true,
