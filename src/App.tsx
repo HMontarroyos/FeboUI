@@ -1,6 +1,8 @@
+import React from 'react';
+
 function App(): JSX.Element {
   return (
-      <h1>ApoloUI</h1>
+      <h1>Febos UI</h1>
   );
 }
 
