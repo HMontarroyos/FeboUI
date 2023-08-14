@@ -4,6 +4,7 @@ import resolve from "@rollup/plugin-node-resolve";
 import image from "rollup-plugin-image-files";
 import babel from "@rollup/plugin-babel";
 import replace from "rollup-plugin-replace";
+import postcss from 'rollup-plugin-postcss';
 
 export default {
   input: "./src/components/index.tsx",
@@ -16,6 +17,11 @@ export default {
     resolve(),
     commonjs({
       include: /node_modules/,
+    }),
+    postcss({
+      plugins: [], 
+      extract: true, 
+      inject: false, 
     }),
     typescript({
       declaration: true,
