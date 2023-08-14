@@ -5,6 +5,7 @@ import image from "rollup-plugin-image-files";
 import babel from "@rollup/plugin-babel";
 import replace from "rollup-plugin-replace";
 
+
 export default {
   input: "./src/components/index.tsx",
   output: {
@@ -13,7 +14,11 @@ export default {
     sourcemap: true,
   },
   plugins: [
-    resolve(),
+    resolve(
+      {
+        interop: false,
+      }
+    ),
     commonjs({
       include: /node_modules/,
     }),
