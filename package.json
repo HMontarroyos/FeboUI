@@ -1,9 +1,35 @@
 {
   "name": "febo-ui",
   "version": "0.1.27",
+  "description": "Acelere seu Desenvolvimento com Nossa Biblioteca de Componentes para React, Febo UI",
+  "author": "Hebert Montarroyos",
   "private": false,
   "type": "module",
   "main": "dist/index.js",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/HMontarroyos/FeboUI"
+  },
+  "homepage": "https://apolo-ui.vercel.app/",
+  "keywords": [
+    "react-components",
+    "ui-library",
+    "react-ui",
+    "component-library",
+    "user-interface",
+    "react-components-library",
+    "ui-components",
+    "react-ui-components",
+    "front-end-components",
+    "web-components",
+    "responsive-design",
+    "design-system",
+    "react-design",
+    "interactive-ui",
+    "modern-ui",
+    "customizable-components"
+  ],
   "module": "dist/index.esm.js",
   "types": "dist/index.d.ts",
   "files": [
