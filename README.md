@@ -8,7 +8,7 @@
 [![LinkedIn][linkedin-shield]][linkedin-url]
 
 <p align="center">
-  <a href="https://apolo-ui.vercel.app">
+  <a href="https://www.feboui.com.br">
     <img src="././public/febo_ui_logo.png" alt="Febo UI logo" width="300" />
   </a>
 </p>
@@ -30,7 +30,7 @@ Simplifique e otimize seus projetos com a versátil biblioteca de componentes pa
 
   <a href="#Documentação">Documentação</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#Instalação">Instalação</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#Exemplos de uso">Exemplos de uso</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#Exemplos-de-uso">Exemplos de uso</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#Contribuindo">Contribuindo</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#Licença">Licença</a>
 
@@ -40,7 +40,7 @@ Simplifique e otimize seus projetos com a versátil biblioteca de componentes pa
 ### <strong>Documentação</strong>
 
 <p>
-Toda a documentação de cada componente criado, assim como seu uso prático, se encontra no nosso site oficial <a href="https://apolo-ui.vercel.app">https://apolo-ui.vercel.app</a>
+Toda a documentação de cada componente criado, assim como seu uso prático, se encontra no nosso site oficial <a href="https://www.feboui.com.br">https://www.feboui.com.br</a>
 </p>
 
 <br/>
@@ -53,6 +53,11 @@ Toda a documentação de cada componente criado, assim como seu uso prático, se
 
 ```sh
 npm i febo-ui
+
+# or
+
+yarn add febo-ui
+
 ```
 <br/>
 
@@ -78,7 +83,7 @@ function App() {
 ```
 
 <p>Neste exemplo, dentro do arquivo App, estamos chamando diretamente o Componente Button e passando algumas de suas props, para ser renderizado na tela</p>
-<p>Mais exemplos de uso, e sobre quais props cada componente suporta, só acessar a documentação <a href="https://apolo-ui.vercel.app">aqui</a></p>
+<p>Mais exemplos de uso, e sobre quais props cada componente suporta, só acessar a documentação <a href="https://www.feboui.com.br">aqui</a></p>
 
 
 <br/>
