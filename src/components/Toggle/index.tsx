@@ -3,7 +3,7 @@ import * as S from "./styled";
 
 interface ToggleProps {
   onChange?: (isOn: boolean) => void;
-  defaultOn?: boolean;
+  checked?: boolean;
   color?: string;
   disabled?: boolean;
   showText?: boolean;
@@ -11,16 +11,16 @@ interface ToggleProps {
 
 const Toggle: React.FC<ToggleProps> = ({
   onChange,
-  defaultOn = false,
+  checked = false,
   color,
   showText,
   disabled,
 }) => {
-  const [isOn, setIsOn] = useState(defaultOn);
+  const [isOn, setIsOn] = useState(checked);
 
   useEffect(() => {
-    setIsOn(defaultOn);
-  }, [defaultOn]);
+    setIsOn(checked);
+  }, [checked]);
 
   const handleToggle = () => {
     if (!disabled) {

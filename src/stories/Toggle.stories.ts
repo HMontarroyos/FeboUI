@@ -12,14 +12,14 @@ export default {
 
 export const Default: StoryObj = {
   args: {
-    defaultOn: true,
+    checked: true,
     onChange: console.log("Hello Word"),
   },
 };
 
 export const Color: StoryObj = {
   args: {
-    defaultOn: true,
+    checked: true,
     onChange: console.log("Hello Word"),
     color: "red",
   },
@@ -27,7 +27,7 @@ export const Color: StoryObj = {
 
 export const Text: StoryObj = {
   args: {
-    defaultOn: true,
+    checked: true,
     onChange: console.log("Hello Word"),
     color: "#0d9ba2",
     disabled: false,
@@ -37,7 +37,7 @@ export const Text: StoryObj = {
 
 export const Disabled: StoryObj = {
   args: {
-    defaultOn: true,
+    checked: true,
     onChange: console.log("Hello Word"),
     color: "red",
     disabled: true,
