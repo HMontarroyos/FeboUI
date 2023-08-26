@@ -1,11 +1,14 @@
 import React from "react";
-import { Toggle } from "./components";
+import { Separator, Toggle, TouchOverlay } from "./components";
 
 function App(): JSX.Element {
   return (
     <>
-      <h1>Febos UI</h1>
-      <Toggle onChange={() => console.log("TESTE")}  checked={false}/>
+      <TouchOverlay onClick={() => console.log("TESTE")}>
+        <h1>Febos UI</h1>
+      </TouchOverlay>
+      <Separator spacing={50} />
+      <Toggle onChange={() => console.log("TESTE")} checked={false} />
     </>
   );
 }
