@@ -7,6 +7,11 @@
   "type": "module",
   "main": "dist/index.js",
   "license": "MIT",
+  "husky": {
+    "hooks": {
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
+    }
+  },
   "repository": {
     "type": "git",
     "url": "https://github.com/HMontarroyos/FeboUI"
@@ -62,16 +67,10 @@
     "typescript": "^4.9.5",
     "web-vitals": "^3.4.0"
   },
-  "husky": {
-    "hooks": {
-      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
-    }
-  },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "commit": "cz",
     "release": "npm version patch && npm publish --access=public",
     "build-components": "npx rollup -c",
     "eject": "react-scripts eject",
@@ -120,7 +119,6 @@
     "@storybook/testing-library": "^0.2.0",
     "@storybook/theming": "^7.3.2",
     "babel-plugin-styled-components": "^2.1.4",
-    "commitizen": "^4.3.0",
     "eslint-plugin-storybook": "^0.6.13",
     "husky": "^8.0.3",
     "prop-types": "^15.8.1",
