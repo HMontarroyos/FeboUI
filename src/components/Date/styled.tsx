@@ -1,5 +1,4 @@
 import styled from "styled-components";
-import { Calendar } from "../../assets/images";
 import { borderVariants } from "../../global";
 
 interface Props {
@@ -39,21 +38,5 @@ export const DateInput = styled.input<Props>`
       : props.color} !important;
   background-color: ${(props) =>
     props.disabled ? "#dfdfdf" : props.backgroundColorInput};
-    cursor: ${(props) => (props.disabled && "not-allowed")};
-
-  /*   &[type="date"]::-webkit-calendar-picker-indicator{
-    background-color: pink;
-    padding: 5px;
-    cursor: pointer;
-    border-radius: 3px;
-  },
-  &[type="datetime-local"]::-webkit-calendar-picker-indicator {
-    appearance: none;
-    width: 20px;
-    height: 20px;
-    cursor: pointer;
-    background-image: url(${Calendar});
-    background-repeat: no-repeat;
-    background-position: calc(100% - 1px) center;
-  } */
+  cursor: ${(props) => props.disabled && "not-allowed"};
 `;
