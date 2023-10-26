@@ -7,6 +7,7 @@ import Separator from "./Separator";
 import Video from "./Video";
 import Date from "./Date";
 import PriceFormat from "./PriceFormat";
+import FlatList from "./FlatList";
 
 export {
   Button,
@@ -18,4 +19,5 @@ export {
   Video,
   Date,
   PriceFormat,
+  FlatList
 };
