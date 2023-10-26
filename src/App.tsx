@@ -19,6 +19,14 @@ function App(): JSX.Element {
         onChange={() => console.log("TESTE")}
       />
       <Video
+        src={"./assets/videos/Teste.mp4"}
+        controls
+        autoPlay
+        width={"200px"}
+        height={"200px"}
+        loop
+      />
+      <Video
         src={"https://www.youtube.com/watch?v=Q4BCszJMNdw"}
         controls
         autoPlay

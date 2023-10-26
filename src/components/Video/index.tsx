@@ -1,13 +1,12 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import * as S from "./styled";
 
 interface VideoProps {
-  src: string;
+  src: string | File;
   width: string;
   height: string;
   autoPlay?: boolean;
   muted?: boolean;
-  thumbnail?: string;
   controls: boolean;
   loop?: boolean;
 }
@@ -20,21 +19,38 @@ function Video({
   height,
   controls,
   loop,
-  thumbnail,
 }: VideoProps): JSX.Element {
+  const [videoSrc, setVideoSrc] = useState<string | undefined>(undefined);
+
+  useEffect(() => {
+    if (typeof src === "string") {
+      if (src.includes("youtube.com")) {
+        const videoID = src.split("v=")[1];
+        setVideoSrc(`https://www.youtube.com/embed/${videoID}`);
+      } else {
+        setVideoSrc(src);
+      }
+    } else if (src instanceof File) {
+      const videoURL = URL.createObjectURL(src);
+      setVideoSrc(videoURL);
+    }
+  }, [src]);
+
   return (
     <S.Container>
-      <S.Video
-        width={width}
-        height={height}
-        autoPlay={autoPlay}
-        controls={controls}
-        loop={loop}
-        poster={thumbnail}
-        muted={muted}
-      >
-        <source src={src} type="video/mp4" />
-      </S.Video>
+      {videoSrc && (
+        <S.Video
+          width={width}
+          height={height}
+          autoPlay={autoPlay}
+          controls={controls}
+          loop={loop}
+          poster={videoSrc}
+          muted={muted}
+        >
+          <source src={videoSrc || ""} type="video/mp4" />
+        </S.Video>
+      )}
     </S.Container>
   );
 }
