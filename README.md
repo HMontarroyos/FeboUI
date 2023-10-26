@@ -94,6 +94,16 @@ function App() {
 
 <br/>
 
+Adicione seu nome ao  `CONTRIBUTORS.md` seguindo a convenção abaixo ao abrir o PR para que fique registrado:
+
+```markdown
+#### Name: [Hebert Montarroyos](https://github.com/HMontarroyos)
+- Place: Rio de Janeiro, Brazil
+- Bio: Fullstack Developer
+- GitHub: [Hebert Montarroyos](https://github.com/HMontarroyos)
+```
+
+
 ### <strong>Licença</strong>
 
 MIT © [Hebert Montarroyos ](https://github.com/HMontarroyos)
